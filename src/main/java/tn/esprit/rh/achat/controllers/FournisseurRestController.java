@@ -52,6 +52,7 @@ public class FournisseurRestController {
 	@ResponseBody
 	public Fournisseur modifyFournisseur(@RequestBody Fournisseur fournisseur) {
 		getFournisseurs();
+		//khalillll
 		return fournisseurService.updateFournisseur(fournisseur);
 	}
 
