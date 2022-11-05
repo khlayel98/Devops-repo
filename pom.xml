@@ -60,7 +60,7 @@
 		<repository>
 			<id>releases</id>
 			<name>Releases</name>
-			<url>http://http://192.168.1.10:8081/repository/maven-releases/</url>
+			<url>http://192.168.1.10:8081/repository/maven-releases/</url>
 		</repository>
 		
 	</distributionManagement>
