@@ -51,8 +51,6 @@ public class FournisseurRestController {
 	@PutMapping("/modify-fournisseur")
 	@ResponseBody
 	public Fournisseur modifyFournisseur(@RequestBody Fournisseur fournisseur) {
-		getFournisseurs();
-		//khalillll
 		return fournisseurService.updateFournisseur(fournisseur);
 	}
 
