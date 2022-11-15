@@ -43,8 +43,8 @@ public void testAddStock() {
 @Test
 public void testDeleteStock()
 	{
-		iStockService.deleteStock(5L);
-		assertNull(iStockService.retrieveStock(5L));
+		iStockService.deleteStock(10L);
+		assertNull(iStockService.retrieveStock(10L));
 	}
 	
 	@Order(2)
@@ -59,8 +59,8 @@ public void testDeleteStock()
 	@Test
 	public void testRetrieveStock()
 	{
-		Stock stock = iStockService.retrieveStock(2L);
-		assertEquals(2L,stock.getIdStock().longValue());
+		Stock stock = iStockService.retrieveStock(12L);
+		assertEquals(7L,stock.getIdStock().longValue());
 		
 	}
 	
@@ -69,7 +69,7 @@ public void testDeleteStock()
 	public void testUpdateStock()
 	{
 		Stock s = new Stock();
-		s.setIdStock(1L);
+		s.setIdStock(13L);
 		s.setLibelleStock("stock test");
 		s.setQte(700);
 		s.setQteMin(7000);
