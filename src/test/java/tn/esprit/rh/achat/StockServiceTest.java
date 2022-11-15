@@ -43,8 +43,8 @@ public void testAddStock() {
 @Test
 public void testDeleteStock()
 	{
-		iStockService.deleteStock(20L);
-		assertNull(iStockService.retrieveStock(20L));
+		iStockService.deleteStock(8L);
+		assertNull(iStockService.retrieveStock(8L));
 	}
 	
 	@Order(2)
