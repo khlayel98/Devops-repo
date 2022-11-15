@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  database:
+  mysqldb:
     image: mysql
-    container_name: mysql
+    container_name: mysqldb
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
       MYSQL_DATABASE: achatdb   
@@ -18,7 +18,7 @@ services:
     ports:
      - 8089:8089
     depends_on:
-     - database
+     - mysqldb
 
 #  angular_app:
 #    image: wassim19/achatfront:1.0
