@@ -20,11 +20,11 @@ services:
     depends_on:
      - database
 
-  angular_app:
-    image: wassim19/achatfront:1.0
-    container_name: achatangular
-    restart: on-failure
-    ports:
-     - 4200:4200
-    depends_on:
-     - spring_app
+#  angular_app:
+#    image: wassim19/achatfront:1.0
+#    container_name: achatangular
+#    restart: on-failure
+#    ports:
+#     - 4200:4200
+#    depends_on:
+#     - spring_app
