@@ -38,7 +38,7 @@ import java.util.stream.Stream;
 IStockService stockService;                                                             
 Stock s = new Stock("stock test",100,1);                                             
 private Stock stock1 = new Stock(1L,"stock Mock1", 100, 1,null);                        
-private Stock stock2 = new Stock(2L,"stock Mock2", 200, 2,null);                        
+private Stock stock2 = new Stock(3L,"stock Mock2", 200, 2,null);                        
  @Test                                                                                
 public void testAddStock() {                                                         
 List<Stock> stocks = stockService.retrieveAllStocks();                           
