@@ -12,7 +12,7 @@ services:
     
 
   spring_app:
-    image: salahzaghdidi/devopsproject:1.1
+    image: khlayel/devopsproject:1.0
     container_name: achatspring
     restart: on-failure
     ports:
