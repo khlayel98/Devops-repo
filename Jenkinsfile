@@ -39,14 +39,14 @@ pipeline {
         }
         stage('Build Docker image') {
             steps {sh 'echo image_exist'
-                    sh 'docker build -t raniabenabdallah/achat .'
+                   // sh 'docker build -t raniabenabdallah/achat .'
             }
             
         }
         stage('Dépot d image sur Docker hub') {
             steps {sh 'echo image_pushed'
-               sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
-               sh 'docker push raniabenabdallah/achat'
+              // sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
+               //sh 'docker push raniabenabdallah/achat'
                 }
         }
         stage('Run Docker-compose') {
